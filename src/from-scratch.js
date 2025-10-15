@@ -42,15 +42,17 @@ const getNextOpponent = (team) => {
   }
 };
 
-const listAllKeys = (object) => {
-  return (Object.keys(object));
-};
+const listAllKeys = (object) => (Object.keys(object));
 
-const listAllValues = (object) => {
-  return (Object.values(object));
-};
+const listAllValues = (object) => (Object.values(object));
 
-const convertToMatrix = () => {
+const convertToMatrix = (arr) => {
+  if (arr.length === 0) {
+    return [];
+  }
+  const keys = Object.keys(arr[0]);
+  const values = arr.map(obj => Object.values(obj));
+  return [keys, ...values];
 };
 
 module.exports = {
