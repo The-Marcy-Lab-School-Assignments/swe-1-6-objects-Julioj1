@@ -42,7 +42,8 @@ const getNextOpponent = (team) => {
   }
 };
 
-const listAllKeys = () => {
+const listAllKeys = (object) => {
+  return (Object.keys(object));
 };
 
 const listAllValues = () => {
