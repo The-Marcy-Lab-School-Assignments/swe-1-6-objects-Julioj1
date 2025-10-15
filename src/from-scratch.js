@@ -11,7 +11,9 @@ const haveBirthday = (person) => {
   return;
 };
 
-const becomeSecretAgent = () => {
+const becomeSecretAgent = (person, spyHandle) => {
+  delete person.name;
+  person.spyHandle = spyHandle;
 };
 
 const carMaker = () => {
