@@ -26,8 +26,7 @@ const carMaker = (name, maker, year) => {
   return car;
 };
 
-const weAreNotFriends = () => {
-};
+const weAreNotFriends = (person) => person.friends.pop();
 
 const listHobbies = () => {
 };
