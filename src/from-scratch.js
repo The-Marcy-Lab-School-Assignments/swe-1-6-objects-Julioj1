@@ -6,7 +6,9 @@ const coolGreeting = (person) => {
   }
 };
 
-const haveBirthday = () => {
+const haveBirthday = (person) => {
+  person.age++;
+  return;
 };
 
 const becomeSecretAgent = () => {
