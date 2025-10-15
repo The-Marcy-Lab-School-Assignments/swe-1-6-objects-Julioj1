@@ -16,7 +16,14 @@ const becomeSecretAgent = (person, spyHandle) => {
   person.spyHandle = spyHandle;
 };
 
-const carMaker = () => {
+const carMaker = (name, maker, year) => {
+  car = {
+    needsOilChange: false,
+  }
+  car.name = name;
+  car.maker = maker;
+  car.year = year;
+  return car;
 };
 
 const weAreNotFriends = () => {
